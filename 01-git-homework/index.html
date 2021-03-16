@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git cheat list</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #feede8;
+            padding-left: 20%;
+            font-family: 'Raleway', sans-serif;;
+        }
+        dt{
+            color:rgb(128, 17, 91);
+        }
+    </style>
+    
 </head>
 <body>
     <h1>Git cheat list</h1>
@@ -35,6 +48,7 @@
         <dd>Об'єднати гілки</dd>
         <dt><b>git clone</b></dt>
         <dd>Викачує репозиторій разом з усією історією змін</dd>
+        <br> <br>
         <dt><b>git revert</b></dt>
         <dd>Команду можна вважати командою типу "скасувати", однак вона не є традиційною операцією скасування. Замість того, щоб видалити коміт з історії проекту, він з'ясовує, як інвертувати зміни, введені комітом, і додає новий коміт із отриманим зворотним змістом. </dd>
         <dt><b>git reset</b></dt>
@@ -46,6 +60,23 @@
         <dt><b>git stash</b></dt>
         <dd>Тимчасово зберігає всі незафіксовані зміни відслідковуваних файлів</dd>
     </dl>
-    <p><br><strong>.gitignore файли</strong>- це такі файли, які завжди ігноруються git. Як правило, це файли, які генеруються використовуваними програмами у локальному сховищі, і які не потрібно відправляти у віддалений репозиторій</p>
+    <p><br><strong>.gitignore файли</strong>- це такі файли, які завжди ігноруються git. Як правило, це файли, які генеруються використовуваними програмами у локальному сховищі, і які не потрібно відправляти у віддалений репозиторій <br></p>
+
+    <h2>Підключення через SSH</h2>
+    <ol>
+        <li>Генеруємо ssh-ключ, якщо його немає і відкриваємо 
+            <ul>
+             <li><b>ssh-keygen</b> </li> 
+             <li><b>cat ~/.ssh/id_rsa.pub</b></li>
+            </ul>
+        </li>
+        <li>Копіюємо ключ та додаємо його у свій профіль GitHub</li>
+        <li>Змінюємо адресу локального репозиторію 
+            <ul>
+            <li> <b>git remote set-url origin &ltrepo-ssh-url&gt</b></li>
+            </ul>
+        </li>   
+    </ol>
+    <img src="ssh.png"  width="700" alt="">
 </body>
 </html>

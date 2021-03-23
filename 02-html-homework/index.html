@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw#2. HTML</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <table border="1"> 
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Телефон</th>
+            <th>E-mail</th>
+        </tr>
+        <tr>
+            <td>Петро</td>
+            <td>Петренко</td>
+            <td>12-3-456</td>
+            <td>1234@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Іван</td>
+            <td>Іванов</td>
+            <td>65-7-376</td>
+            <td>2345@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Василь</td>
+            <td>Василенко</td>
+            <td>34-58-83</td>
+            <td>3456@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Андрій</td>
+            <td>Андрійчук</td>
+            <td>76-489-8</td>
+            <td>4567@gmail.com</td>
+        </tr>
+    </table>
+    <form action="#">
+        <input type="text" name="First Name" placeholder="Ім'я">
+        <input type="text" name="Last Name"placeholder="Прізвище">
+        
+       <p><input type="radio" name="sex" value="male" class="radio">Чоловік
+       <input type="radio" name="sex" value="female" class="radio" checked>Жінка</p>
+
+       <textarea name="comment" cols="30" rows="10" placeholder="Напишіть щось..."></textarea>
+
+       <p><select name="city">
+           <option value="-"selected disabled>Ваше місто</option>
+           <option value="Kyiv">Київ</option>
+           <option value="Lviv">Львів</option>
+           <option value="Odesa">Одеса</option>
+           <option value="Kharkiv">Харків</option>
+           <option value="etc">Інше</option>
+       </select></p>
+       <p><input type="checkbox" name="language" value="ukr" checked>Українська мова</p>
+       <p><input type="checkbox" name="language" value="eng">Англійська мова</p>
+       <p><input type="checkbox" name="language" value="ru">Російська мова</p>
+       <button type="submit">Готово!</button>
+    </form>
+    </div>
+</body>
+</html>

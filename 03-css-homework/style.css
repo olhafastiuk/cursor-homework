@@ -79,7 +79,8 @@ table {
 .table{
     position: relative;
     top: 50px;
-    left: 50px;
+    left: 30px;
+    right:30px;
     margin:50px;
     width: 650px;
     border: 1px solid rgb(116, 116, 116);

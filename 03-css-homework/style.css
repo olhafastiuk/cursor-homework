@@ -27,8 +27,8 @@ a  {
 .circle {
     display: inline-block;
     margin-bottom: 2px;
-    height: 5px;
-    width: 5px;
+    height: 3px;
+    width: 3px;
     background-color: rgb(116, 116, 116);
     border-radius: 50%;
 }
@@ -43,26 +43,32 @@ a  {
 
 .search{
     display: flex;
-    padding: 5px;
+    padding: 3px;
+    align-items: center;
     
 }
 
 #search-img {
+    display: flex;
+    align-items: center;
+    padding: 7px;
     background-color: rgb(68, 68, 68); 
     border: none;
-    padding: 7px;
+    height: 30px;
     border-radius:  8px 0 0 8px ;
 }
 
 #search-img img {
     filter: invert(36%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(79%);
+    width: 15px;
 }
 
 #search-text-input{
     background-color: rgb(68, 68, 68);
     border:none;
     border-radius: 0 8px 8px 0;
-    padding: 10px;
+    padding: 7px 0;
+    height: 30px;
 }
   
 table {
@@ -73,7 +79,8 @@ table {
 .table{
     position: relative;
     top: 50px;
-    margin: 2em;
+    left: 50px;
+    margin:50px;
     width: 650px;
     border: 1px solid rgb(116, 116, 116);
     border-radius: 6px;
@@ -88,8 +95,7 @@ td{
 th {
     text-align: left;
     padding: 10px 20px;
-    width: 35%;
-    font-size: 14px;
+    width: 38%;
 }
 
 .right {
@@ -97,5 +103,12 @@ th {
 }
 
 input[type="checkbox"] {
-    margin-right: 7px;
+    margin-right: 12px;
+}
+
+.folder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
 }

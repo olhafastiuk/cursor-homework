@@ -15,6 +15,14 @@ h1{
     padding: 0 0 2vw 0;
 }
 
+h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-bottom: 3vw;
+    color: #101010;
+
+}
+
 p{
     font-size: 1vw;
     font-weight: 400;
@@ -111,8 +119,14 @@ input {
 }
 
 .section-2 {
-    padding: 8vw 5vw 8vw 5vw; 
+    padding: 8vw 5vw 12vw 5vw; 
     width: 100%;
+}
+
+footer {
+    padding: 5vw 6vw; 
+    width: 100%;
+    background: #FAFAFA;
 }
 
 .main-text{
@@ -138,4 +152,27 @@ input {
 
 .half {
     width: 45%;
+}
+
+.f-col {
+    flex:1;
+    padding: 3.5vw;
+}
+.soc {
+    width: 1.5vw;
+    height: 0.9vw;
+}
+
+.f-text {
+    padding: 0 0 0.8vw;
+    color: #101010;
+    font-size: 0.8vw;
+}
+
+.supp{
+    width: 20vw;
+}
+
+.cop {
+    padding:3vw 3vw 0;
 }

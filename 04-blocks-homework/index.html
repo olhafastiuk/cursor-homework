@@ -11,7 +11,7 @@
 </head>
 <body class="flex-column ">
     <section class="section-1 bg-pink flex justify-content-ar">     <!-- section1 -->
-        <div class="main-text flex-column justify-content-ar"> <!-- main text and logo -->
+        <div class="main-text flex-column"> <!-- main text and logo -->
             <h1 class="white">Stay focused on saving money</h1>
             <p class="white">
                 It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!
@@ -27,8 +27,36 @@
             <img src="images/Slider.png" alt="businessman">
         </div>
     </section>
-    <section>
-        <!-- section2 -->
+    <section class="section-2 flex justify-content-ar">     <!-- section2 -->
+        <div class="flex-column main-text"> <!-- Contact text -->
+            <h1>Contact</h1>
+            <p>
+                Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours
+            </p>
+        </div>
+        <div class="r-form flex-column">        <!-- Registration form -->
+            <form action="#">
+                <div class="flex justify-content-sb">          <!-- Name -->
+                    <input class="half" type="text" placeholder="First Name">
+                    <input class="half" type="text" placeholder="Last Name">
+                </div>   <!-- phone -->
+                <div><input type="text" placeholder="Phone Number"></div>
+                <div>   <!-- services -->
+                    <select name="service" id="service">
+                        <option value="-" disabled selected>Select Service</option>
+                        <option value="Overview">Overview</option>
+                        <option value="Features">Features</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Terms & Conditions">Terms & Conditions</option>
+                        <option value="Privecy">Privecy</option>
+                    </select>
+                </div>
+                <div> <!-- button -->
+                    <button type="submit">SUBMIT NOW</button>
+                </div>
+
+            </form>
+        </div>
     </section>
     <footer>
 

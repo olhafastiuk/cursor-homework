@@ -17,8 +17,62 @@ h1{
 
 p{
     font-size: 1vw;
+    font-weight: 400;
     padding: 2vw 0 4vw 0;
 }
+
+input {
+    width: 98%;
+    height: 4vw;
+    padding: 1vw 2vw;
+    margin: 0.5vw;
+    border: 0.1vw solid #333333;
+    border-radius: 0.3vw;
+    font-weight: 400;
+}
+
+#service {
+    width: 98%;
+    height: 4vw;
+    padding: 1vw 2vw;
+    margin: 0.5vw;
+    border: 0.1vw solid #333333;
+    border-radius: 0.3vw;
+    font-weight: 400;
+    color: rgba(19, 39, 67, 0.5);
+    font-size: 1vw;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(19, 39, 67, 0.5);
+    font-size: 1vw;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(19, 39, 67, 0.5);
+    font-size: 1vw;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(19, 39, 67, 0.5);
+    font-size: 1vw;
+  }
+
+  button {
+    width: 28%;
+    height: 3.5vw;
+    padding: 0.7vw;
+    margin: 0.5vw;
+    border: 0.1vw solid #ED4C5C; 
+    background: #ED4C5C;
+    border-radius: 0.3vw;
+    font-weight: 400;
+    color: white;
+    font-size: 0.9vw;
+  }
+
+
     /* flexbox */
 
 .flex {
@@ -31,6 +85,10 @@ p{
 
 .justify-content-ar {
     justify-content: space-around;
+}
+
+.justify-content-sb {
+    justify-content: space-between; 
 }
 
   /* styles */
@@ -47,24 +105,37 @@ p{
 /* sections */
 
 .section-1 {
-    padding: 8vw 9vw; 
+    padding: 8vw 20vw 8vw 5vw; 
     width: 100%;
     align-items: center;
 }
 
+.section-2 {
+    padding: 8vw 5vw 8vw 5vw; 
+    width: 100%;
+}
+
 .main-text{
-    width: 30vw;
-    justify-content: space-around;
+    width: 31vw;
 }
 
 .logo{
     margin-right: 2vw;
-    width: 2.5vw;
+    width: 2vw;
+}
+
+.slider {
+    width: 25vw;
 }
 
 .slider img {
-    width: 100%;
+    width: 145%;
 }
-.slider {
+
+.r-form {
     width: 40vw;
+}
+
+.half {
+    width: 45%;
 }

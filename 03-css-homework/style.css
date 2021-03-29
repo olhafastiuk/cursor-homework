@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body {
+    background-color: rgb(44, 45, 45);
+    color: white;
+    font-family: sans-serif;
+}
+
+a  {
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+
+.triangle-down {
+    display: inline-block;
+	border-left: 6px solid transparent;;
+	border-right: 6px solid transparent;
+	border-top:7px solid white;
+    margin-left: 10px;
+}
+
+.circle {
+    display: inline-block;
+    margin-bottom: 2px;
+    height: 5px;
+    width: 5px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 50%;
+}
+
+.white {
+    background-color: white;
+}
+
+.gray {
+    color: rgb(116, 116, 116);
+}
+
+.search{
+    display: flex;
+    padding: 5px;
+    
+}
+
+#search-img {
+    background-color: rgb(68, 68, 68); 
+    border: none;
+    padding: 7px;
+    border-radius:  8px 0 0 8px ;
+}
+
+#search-img img {
+    filter: invert(36%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(79%);
+}
+
+#search-text-input{
+    background-color: rgb(68, 68, 68);
+    border:none;
+    border-radius: 0 8px 8px 0;
+    padding: 10px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table{
+    position: relative;
+    top: 50px;
+    margin: 2em;
+    width: 650px;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 6px;
+}
+
+td{
+    border-spacing: 0;
+    padding: 10px 20px;
+    border-top: 1px solid rgb(116, 116, 116);
+}
+
+th {
+    text-align: left;
+    padding: 10px 20px;
+    width: 35%;
+    font-size: 14px;
+}
+
+.right {
+    text-align: right;
+}
+
+input[type="checkbox"] {
+    margin-right: 7px;
+}

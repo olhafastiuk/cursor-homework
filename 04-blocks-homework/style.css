@@ -54,6 +54,14 @@ input {
     color: rgba(19, 39, 67, 0.5);
     font-size: 1vw;
     background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;      
+    background-image: url(./images/arrow-down.svg); 
+    background-repeat: no-repeat;
+    background-position-x: 36vw;
+    background-position-y: center;
+    background-size: 2.5%;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -185,15 +193,4 @@ footer {
 
 .cop {
     padding:3vw 3vw 0;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;      
-    background-image: url(./images/arrow-down.svg); 
-    background-repeat: no-repeat;
-    background-position-x: 36vw;
-    background-position-y: center;
-    background-size: 2.5%;
 }

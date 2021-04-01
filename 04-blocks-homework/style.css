@@ -41,9 +41,11 @@ input {
     border: 0.1vw solid #333333;
     border-radius: 0.3vw;
     font-weight: 400;
+    outline:none;
 }
 
 #service {
+    outline:none;
     width: 98%;
     height: 4vw;
     padding: 1vw 2vw;
@@ -85,17 +87,20 @@ input {
     height: 3.5vw;
     padding: 0.7vw;
     margin: 0.5vw;
-    border: 0.1vw solid #ED4C5C; 
+    border: none;
     background: #ED4C5C;
     border-radius: 0.3vw;
     font-weight: 400;
     color: white;
     font-size: 0.9vw;
     cursor: pointer;
+    outline:none;
   }
 
   button:hover {
-    background-color: #EE3D1B;
+   /* color: #EE3D1B; */
+   background: #504647;
+   
   }
 
     /* flexbox */
@@ -155,6 +160,10 @@ footer {
     width: 2vw;
 }
 
+.logo:hover {
+    filter: invert(33%) sepia(14%) saturate(19%) hue-rotate(317deg) brightness(97%) contrast(97%);
+}
+
 .slider {
     width: 25vw;
 }
@@ -193,4 +202,8 @@ footer {
 
 .cop {
     padding:3vw 3vw 0;
+}
+
+.change:hover{
+    filter: invert(24%) sepia(100%) saturate(1939%) hue-rotate(354deg) brightness(108%) contrast(87%);
 }

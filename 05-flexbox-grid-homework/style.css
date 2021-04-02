@@ -8,12 +8,13 @@
 body{
     display: flex;
     flex-direction: column;
-   padding: 5% 12%;
+    padding: 5% 12%;
     background:rgb(248, 251, 254);
 }
 
 h1{
     font-family: 'Noto Sans', sans-serif;
+    font-size: 80px;
     font-weight: 700;
     color: #212353;
     line-height: 110%;
@@ -84,13 +85,14 @@ a:hover{
 
 header{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 2fr;
     align-items: center;
+    
 }
 
 nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
     gap: 10px;
 }
 
@@ -99,3 +101,25 @@ nav{
     height: 35px;
 }
 
+.section1{
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: 60%;
+    background-image: url(./images/main/section-1.png);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: bottom;
+    background-size: 700px;
+    gap: auto;
+    height: 500px;;
+}
+.section1 p{
+    width: 50%;
+}
+
+.btn-learn{
+    color: white;
+    background: #9C69E2;
+    grid-template-columns: 1fr;
+    width: 170px;
+}

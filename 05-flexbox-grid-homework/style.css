@@ -84,7 +84,7 @@ a:hover{
 /* styles */
 
 .white{
-    color: white;
+    filter: invert(100%) sepia(1%) saturate(7412%) hue-rotate(132deg) brightness(106%) contrast(98%);
 }
 
 .w-800{
@@ -202,3 +202,82 @@ nav{
     height: 160px;
     width: 220px;
 }
+
+.testimonials {
+    background: #9C69E2;
+    border-radius: 50px;
+    margin-top: 40%;
+    padding: 8% 8% 5%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8%;
+
+}
+
+.testimonials h2{
+    color: white;
+}
+
+.testimonials-main {
+    background: white;
+    padding:  10%;
+   justify-self: center;
+    border-radius: 20px;
+    grid-column: 1/4;
+    grid-row: 2;
+    box-shadow: 0 20px rgb(135, 86, 218);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: start;
+}
+
+.testimonials-main a {
+    color: #9C69E2;
+    font-size: 14px;
+}
+
+.p-testimonials{
+    line-height: 180%;
+    margin-top: 5%;
+    padding-right: 15%;
+}
+
+.circles {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.testimonials-arrows{
+    grid-column: 2/3;
+    grid-row: 3;
+   justify-self: end;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10%;
+}
+
+.circle {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #F063B8;
+    cursor: pointer;
+}
+
+.circle-selected {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #F063B8;
+    border-radius: 50%;
+}
+

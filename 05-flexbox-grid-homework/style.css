@@ -394,6 +394,10 @@ footer a:hover {
     background: rgb(216, 183, 255);
 }
 
+a[href*="mailto"]{
+    margin-top: 8%;
+}
+
 
 /* styles */
 

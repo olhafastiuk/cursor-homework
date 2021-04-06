@@ -1,5 +1,9 @@
 body{
     margin: 5% auto;
+    min-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blocks{
@@ -22,4 +26,33 @@ body{
 
 .blocks div:nth-child(4n){
     background: red;
+}
+.wrap {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    width: 500px;
+    height: 92px;
+    background: #44D3A8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    margin: 0 40px;
+}
+.wrap::before, .wrap::after {
+   content: "";
+   border-color: #C4C4C4;
+   border-style: solid;
+   border-right: 0;
+   border-left: 0;
+   height: 10px;
+   width: 200px;
 }

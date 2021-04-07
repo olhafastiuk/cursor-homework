@@ -46,6 +46,12 @@ button {
     border-radius: 100px;
     border: none;
     margin: 0 40px;
+    outline: none;
+}
+
+button:hover{
+    background: #1d7259;
+    cursor: pointer;
 }
 .wrap::before, .wrap::after {
    content: "";

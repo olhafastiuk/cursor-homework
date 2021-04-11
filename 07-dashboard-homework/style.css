@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1100px;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    margin: 2% 2%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    border-radius: 24px;
+    padding: 3% 3.3%;    
+    height: 94vh;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 230%;
+    margin-bottom: 370%;
+}
+
+.menu-img{
+    margin-bottom: 210%;
+}

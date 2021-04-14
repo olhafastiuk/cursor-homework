@@ -136,11 +136,6 @@ nav {
 }
 
 
-/* .circle-status, svg, circle {
-    width: 5vw;
-    height: 5vw;
-} */
-
 .circle-status{
     display: flex;
     align-items: center;
@@ -228,4 +223,66 @@ circle {
 
 .mr-4 {
     margin-right: 4%;
+}
+
+.status {
+    margin-left: 5%;
+    width: 31vw;
+    margin-top: 27px;
+}
+
+.status-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.status-bar-div{
+    display: flex;
+    align-items: center;
+}
+
+#search-input{
+    outline: none;
+    border: 0;
+    height: 100%;
+    width: 67%;
+    margin-right: 8%;
+    background-image: url(./images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    padding: 0 0 0 10%;
+}
+
+.profile-photo {
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+#profile-menu {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.status-bloc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 7% 4%;
+    width: 46%;
+}
+
+.status-bloc span{
+    font-size: 4em;
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    font-weight: 800;
+    line-height: 0; 
+    margin-right: 7%;
+    padding-top: 10%;
+}
+
+.mr-5 {
+    margin-right: 5%;
 }

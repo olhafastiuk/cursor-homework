@@ -23,6 +23,7 @@ h2{
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-weight: 800;
     font-size: 1.5em;
+    line-height: 2.5em;
 }
 
 h3{
@@ -119,7 +120,7 @@ nav {
     height: 80px;
 }
 
-.course-active-logo {
+.course-logo {
     background: #fff;
     width: 64px;
     height: 64px;
@@ -176,4 +177,55 @@ circle {
 .back {
     transform: rotate(180deg);
     margin-left: 2%;
+}
+
+.courses {
+    margin-top: 5%;
+}
+
+.chapters {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}   
+
+.course{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 18%;
+    padding:0 3.5% 0 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.8%;
+}
+
+.course-name {
+    width: 28%;
+}
+
+
+.course-time {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    width: 15%;
+    margin-left: 4%;
+}
+
+.course-time img{
+    margin-right: 8%;
+}
+
+.course-fire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    width: 6.5%;
+    margin: 0 6% 0 5%;
+
+}
+
+.mr-4 {
+    margin-right: 4%;
 }

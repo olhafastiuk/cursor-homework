@@ -226,6 +226,8 @@ circle {
 }
 
 .status {
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
     width: 31vw;
     margin-top: 27px;
@@ -285,4 +287,36 @@ circle {
 
 .mr-5 {
     margin-right: 5%;
+}
+
+.statistic{
+    margin-top: 7%;
+}
+
+.statistic-chapters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 1%;   
+}
+
+#graph-select{
+    outline: none;
+    border:0;
+    border-radius: 8px;
+    padding: 1.5%;
+    width: 8vw;
+    margin: 0 2% 0 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    appearance: none;   
+    background-image: url(./images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: center;
+    cursor: pointer;
+}
+.graph{
+    margin-top: 7%;
 }

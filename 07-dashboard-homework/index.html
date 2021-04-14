@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;800&family=Roboto&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="./style.css">
     <title>HW #7</title>
 </head>
@@ -25,28 +24,44 @@
            
         </nav>
 
-        <main>   <!-- main info, sections -->
-            <section class="main-info">
-
-                <div> <!-- 1 bloc -->
+        <section class="main-info">
+            <div class="bg-gray greeting"> <!-- 1 bloc -->
+                <div>
                     <h1>Hello Josh!</h1>
                     <p>It’s good to see you again.</p>
-                    <img src="./images/Illustration.svg" alt="">
+                </div>
+                <img src="./images/Illustration.svg" alt="">
+            </div>
+
+            <div class="bg-gray course-active"> 
+                <img src="./images/Courses/spanish.svg" alt="logo">
+                <div> 
+                    <h3>Spanish B2</h3>
+                    <p>by Alejandro Velazquez</p>
                 </div>
 
-                <div>
-                    <img src="./images/Courses/spanish.svg" alt="logo">
-                    <div> 
-                        <h3>Spanish B2</h3>
-                        <p>by Alejandro Velazquez</p>
-                    </div>
+                <div class="circle-status">
+                    <svg>
+                    <circle cx="23  " cy="23" r="20"></circle>
+                </svg>
+                <p class="number">83%</p>
                 </div>
-                
-            </section>
-            <section class="status">
 
-            </section>
-        </main>
+                <button>
+                    Continue
+                </button>
+            </div>
+            <div> <!-- arrow next    -->
+                <a href="#"><img src="./images/arrow.svg" alt=""></a>
+            </div>
+            <div><!-- arrow back -->
+                <a href="#"><img src="./images/arrow.svg" alt=""></a>
+            </div>
+            
+        </section>
+        <section class="status">
+
+        </section>
     </div>
 </body>
 </html>

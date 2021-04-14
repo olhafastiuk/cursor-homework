@@ -12,6 +12,11 @@ body{
 
 /* default style */
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-weight: 800;
@@ -50,11 +55,22 @@ button{
     font-weight: 700;
     font-size: 0.8em;
     color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .bg-gray{
     background: #F5F5F7;
     border-radius: 14px;
+}
+
+.chapter-gray {
+    opacity:0.3;
 }
 
 .mr-4 {
@@ -111,7 +127,7 @@ nav {
 .greeting img {
     position: absolute;
     left: 40vw;
-    top: 3% ;
+    top: 1.8vw ;
 }
 
 .course-active{
@@ -193,6 +209,10 @@ circle {
     width: 70%;
 }   
 
+.chapters h3:hover{
+    opacity: 1;
+}
+
 .course{
     display: flex;
     align-items: center;
@@ -229,7 +249,7 @@ circle {
 
 }
 
-                                /* Status bloc */
+                                /* Status block */
 .status {
     display: flex;
     flex-direction: column;
@@ -270,10 +290,15 @@ circle {
 #profile-menu {
     border: none;
     outline: none;
+    appearance: none;   
+    background-image: url(./images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
     cursor: pointer;
 }
 
-.status-bloc{
+.status-block{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -281,7 +306,7 @@ circle {
     width: 46%;
 }
 
-.status-bloc span{
+.status-block span{
     font-size: 4em;
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-weight: 800;
@@ -320,6 +345,7 @@ circle {
 }
 .graph{
     margin-top: 7%;
+    width: 31vw;
 }
 
 .learn-more {

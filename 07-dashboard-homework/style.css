@@ -320,3 +320,26 @@ circle {
 .graph{
     margin-top: 7%;
 }
+
+.learn-more {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 12% 3% 5%;
+}
+
+.learn-more-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+
+.learn-more-text h2{
+   line-height: 1.6em;
+}
+
+.learn-more-text button{
+    margin-top: 13%;
+}

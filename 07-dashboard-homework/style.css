@@ -29,6 +29,7 @@ h3{
     font-family: 'Baloo Bhaina 2', sans-serif;
     font-weight: 800;
     font-size: 1em;
+    line-height: 1.8em;
 }
 
 p{
@@ -98,20 +99,57 @@ nav {
     padding: 10% 5%;
     margin-bottom: 4%;
 }
+
 .greeting img {
     position: absolute;
     left: 40vw;
     top: 3% ;
 }
 
+.course-active{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-active-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: 81%;
+    height: 80px;
+}
 
-.circle-status, svg, circle {
+.course-active-logo {
+    background: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-p{
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+
+/* .circle-status, svg, circle {
     width: 5vw;
     height: 5vw;
-}
+} */
 
 .circle-status{
     display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+.svg-circle{
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
 }
 
 circle {
@@ -125,6 +163,17 @@ circle {
 
 .number {
     position: relative;
-    right: 2.7vw;
+    right: 32px;
     font-size: 0.8em;
+}
+
+.arrow {
+    border: 2px solid #000000;
+    border-radius: 100%;
+    padding: 9px 10px;
+}
+
+.back {
+    transform: rotate(180deg);
+    margin-left: 2%;
 }

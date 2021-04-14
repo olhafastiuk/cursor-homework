@@ -57,12 +57,19 @@ button{
     border-radius: 14px;
 }
 
-/* styles */
+.mr-4 {
+    margin-right: 4%;
+}
+
+.mr-5 {
+    margin-right: 5%;
+}
+
 .container{
     display: flex;
     margin: 2% 2%;
 }
-
+                                                /* navigation */
 nav {
     display: flex;
     flex-direction: column;
@@ -92,7 +99,7 @@ nav {
     margin-left: 5vw;
     margin-top: 27px;
 }
-
+                                /* section with main info */
 .greeting {
     display: flex;
     width: 100%;
@@ -112,6 +119,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 .course-active-main {
     display: flex;
     justify-content: space-around;
@@ -135,12 +143,12 @@ nav {
     line-height: 1em;
 }
 
-
 .circle-status{
     display: flex;
     align-items: center;
     margin-left: 4%;
 }
+
 .svg-circle{
     display: flex;
     align-items: center;
@@ -198,7 +206,6 @@ circle {
     width: 28%;
 }
 
-
 .course-time {
     display: flex;
     align-items: center;
@@ -221,10 +228,7 @@ circle {
 
 }
 
-.mr-4 {
-    margin-right: 4%;
-}
-
+                                /* Status bloc */
 .status {
     display: flex;
     flex-direction: column;
@@ -283,10 +287,6 @@ circle {
     line-height: 0; 
     margin-right: 7%;
     padding-top: 10%;
-}
-
-.mr-5 {
-    margin-right: 5%;
 }
 
 .statistic{

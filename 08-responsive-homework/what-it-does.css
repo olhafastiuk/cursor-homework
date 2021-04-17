@@ -132,4 +132,5 @@
   .what-it-does-text {
       display: grid;
       gap: 27px;
+      grid-template-columns: 0.6fr;
   }

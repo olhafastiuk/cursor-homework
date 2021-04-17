@@ -19,6 +19,10 @@
         height: 595px;
      }
 
+     .what-it-does-text {
+        grid-template-columns: 1fr;
+     }
+
      .card{
         margin-right: 60px;
      }
@@ -26,7 +30,18 @@
      .turn-notification{
          margin-right: 60px;
      }
+
+
+     /* get started. section3 */
+    .get-started{
+        background-position-x: center;
+     }
+
+     .get-started-media{
+     left: -60px;
+     }
 }
+    
 
 @media (max-width:720px) {
     /* common */
@@ -190,5 +205,50 @@
   
     .what-it-does-text {
         gap: 22px;
+    }
+
+    /* get started. section3 */
+
+    .get-started{
+        flex-direction: column;
+        text-align: center;
+        background-position: -625px bottom;
+        background-size: 1125px;
+        width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .get-started div:nth-of-type(1){
+        grid-template-columns: 80vw;
+    }
+
+    .get-started-media img:nth-of-type(1){
+        height: 483px;
+        left: 50px;
+        top: 0;
+    }
+
+    .get-started-media img:nth-of-type(2){
+        width: 175px;
+        left: 105px;
+        top: -440px;
+    }
+
+    .get-started-media::before{
+        background-size: 37px;
+        width: 72px;
+        height: 72px;
+        left: -30px;
+        top: 100px;
+    }
+    
+    .get-started-media::after{
+        background-image: url(./images/shopping-cart.svg);
+        background-size: 35px;
+        width: 72px;
+        height: 72px;
+        left: 70px;
+        top: -450px;
     }
 }

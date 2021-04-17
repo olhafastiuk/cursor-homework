@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="what-it-does.css">
+
+    <link rel="stylesheet" href="media.css">
     <title>HW #8 responsive</title>
 </head>
 <body>
@@ -63,5 +67,45 @@
         </div>
         <img class="phones" src="./images/Frame.png" alt="phones">
     </header>
+    <main>
+        <section class="flex align-center what-it-does ">
+            <div class="what-it-does-media pl-10 flex-column align-center">
+                <div class="card">
+                    <div class="flex space-between align-center">
+                        <div class="card-text flex-column">
+                            <span>Sat, 12:35pm</span>
+                            <span>Arsenal vs Chelsea</span>
+                            <span>Friendly Match</span>
+                        </div>
+                        <div class="card-emblem flex">
+                            <img src="./images/arsenal.png" alt="Arsenal emblem">
+                            <img src="./images/chelsea-fc.svg" alt="Chelsea emblem">
+                        </div>
+                    </div>
+                </div>
+                <div class="turn-notification flex space-between align-center">
+                    <p>Turn on all match notifications</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                      </label>
+                </div>
+                <div class="video">
+                    <img src="./images/video.png" alt="Match video">
+                </div>
+            </div>
+            <div class="what-it-does-text">
+                <h3>WHAT IT DOES</h3>
+                <h2>An Enhanced Football Experience</h2>
+                <p>
+                    The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get in there, what a result!
+                </p>
+                <p>
+                    As well as videos of all the goals, you can watch match highlights, check out the latest scores and results and stay bang-up-to-date with the big football stories from The Guardian publication.
+                </p>
+                <h3>Learn more</h3>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

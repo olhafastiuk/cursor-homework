@@ -1,0 +1,30 @@
+header {
+    padding: 63px 0 164px 0;
+    background: #F4F6F9;
+    padding-right: 50vw;
+}
+
+.football{
+    height: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-text{
+    margin-top: 133px;
+    position: relative;
+}
+
+.header-text p{
+   width: 32vw;
+   margin-top: 30px;
+   font-size: 18px;
+}
+
+.phones{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 67vw; */
+    z-index: 0;
+}

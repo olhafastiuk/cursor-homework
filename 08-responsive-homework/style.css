@@ -12,22 +12,29 @@ body {
 }
 
 h1{
-    /* font-weight: 700;
-    font-size: 2.25vw;
-    line-height: 3.4vw;
-    letter-spacing: 0.18vw; */
     font-size: 36px;
-    line-height: 48px;;
+    line-height: 48px;
+    font-weight: 700;
     letter-spacing: 0.03em;
-
     color: #333333;
 }
 
+h2 {
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #333333;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #00ADEE;
+}
+
 p{
-    /* font-size: 1.25vw;
-    font-weight: 400;
-    line-height: 1.66vw; */
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     color: #4F4F4F;
 }
@@ -113,137 +120,14 @@ button span{
     flex-direction: column;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 .align-center{
     align-items: center ;
 }
 
 .align-baseline {
     align-items: baseline;
-}
-
-/* header */
-
-header {
-    padding: 63px 0 164px 0;
-    background: #F4F6F9;
-    padding-right: 50vw;
-}
-
-.football{
-    height: 25px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header-text{
-    margin-top: 133px;
-    position: relative;
-}
-
-.header-text p{
-   width: 32vw;
-   margin-top: 30px;
-}
-
-.phones{
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* width: 67vw; */
-    z-index: 0;
-}
-
-@media (max-width: 1200px) {
-    header{
-        padding-right: 25vw;
-    }
-
-    .header-text{
-        background: #f4f6f979;
-        border-radius: 12px;
-    }
-
-    .header-text p{
-        width: auto;
-     }
-}
-
-@media (max-width:720px) {
-    /* common */
-    .pl-10{
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-
-    h1{
-        font-size: 30px;
-        line-height: 40px;
-        text-align: center;
-    }
-
-    p{
-        font-size: 16px;
-        line-height: 23px;
-        text-align: center;
-    }
-
-    button {
-        width: 145.7px;
-        height: 44px;
-    }
-
-    button p{
-        font-size: 9px;
-        line-height: 11px;
-    }
-    
-    button span{
-        font-size: 19px;
-        line-height: 23px;
-    }
-
-    .btn{
-        width: 320px;
-    }
-    
-    .google {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        padding-top: 5px;
-        display: flex;
-    }
-    
-    .google::before{
-        padding-top: 0;
-        padding-right: 4px;
-    }
-
-    /* header */
-
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 34px 0 59px 0;
-    }
-
-    .header-text{
-        margin-top: 86px;
-    }
-
-    .header-text p{
-        width: 315px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .phones{
-        display: none;
-    }
-
-   
-
-
 }

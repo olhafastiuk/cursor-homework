@@ -1,0 +1,135 @@
+.what-it-does-media {
+    background-image:
+    linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), 
+    url(./images/bg-2.png);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 595px;
+}
+
+.card {
+    margin-top: 109px;
+    margin-right: 282px;
+    padding: 27px 16px 16px 16px;
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px 4px 0 0;
+}
+
+.card-text{
+    width: 40%;
+}
+
+.card-text span:nth-of-type(1){
+    font-size: 16.7px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+
+.card-text span:nth-of-type(2){
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 16.5px;
+}
+.card-text span:nth-of-type(3){
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+    padding-top: 14px;
+}
+
+.card-emblem img:nth-of-type(1){
+    position: relative;
+    z-index: 1;
+    width: 67px;
+    height: 79px;
+}
+
+.card-emblem img:nth-of-type(2){
+    position: relative;
+    width: 81px;
+    height: 81.5px;
+    left: -15px;
+}
+
+.turn-notification{
+    position: relative;
+    background: #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 282px;
+    width: 360px;
+    padding: 13px 16px;
+}
+
+.turn-notification p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #4F4F4F
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 12px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 105px;
+    background: #979797;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    top: -6px;
+    background-color: white;
+    box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #00ADEE;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  .video{
+      position: relative;
+      top: -30px;
+      left: -30px;
+      z-index: 1;
+  }
+
+  .what-it-does-text {
+      display: grid;
+      gap: 27px;
+  }

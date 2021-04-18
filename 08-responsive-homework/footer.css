@@ -1,0 +1,33 @@
+footer{
+    background: #00ADEE;
+    padding: 50px 10% 54px 0;
+}
+
+.football-footer{
+    fill: white;
+}
+
+.football-footer-transparent{
+    fill: #00ADEE; ;
+}
+
+footer div>a{
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.soc-logo>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 17px;
+}
+
+.soc-logo{
+    /* width: 12vw; */
+}

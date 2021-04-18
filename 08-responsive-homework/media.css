@@ -297,4 +297,28 @@
         content: '•';
         display: none;
     }
+    /* reviews */
+
+    .transparent1, .transparent2 {
+        display: none;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: -5%;
+    }
+
+    .flickity-prev-next-button.next {
+        right: -5%;
+    }
+}
+
+@media (max-width: 440px){
+    .carousel-cell {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .flickity-prev-next-button.previous {
+        display: none;
+    }
 }

@@ -1,0 +1,128 @@
+.reviews{
+    margin-top: 62px;
+}
+
+.reviews h2 {
+    margin-bottom: 63px;
+}
+.main-carousel{
+    width: calc(100vw - 100px);
+    position: relative;
+    z-index: 0;
+    cursor:initial;
+}
+
+.transparent1{
+    display: inline-block;
+    position: absolute;
+    z-index: 4;
+    left: auto;
+    width: 120px;
+    height: 200px;
+    background: linear-gradient(90deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+    border-radius: 4px;
+}
+
+.transparent2{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: auto;
+    width: 120px;
+    height: 200px;
+    background: linear-gradient(-90deg,#FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+    border-radius: 4px;
+}
+
+.carousel-cell {
+    padding: 15px 13px 15px 17px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    width: 309px;
+    height: 161px;
+    margin-right: 35px;
+    cursor:initial;
+}
+
+.carousel-cell p{
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 5px;
+}
+
+.carousell-cell-custom{
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.carousell-cell-custom img:nth-child(1){
+    margin-right: 11px;
+}
+
+.carousell-cell-custom h3{
+    color: #333333;
+    flex: 4;
+}
+
+.carousell-cell-custom:nth-last-child(){
+    flex: 1;
+    align-items: flex-end;
+}
+  
+.flickity-button{
+    margin-top: 0;
+    background: white;
+    border: 1px solid #00ADEE;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.flickity-button:disabled{
+    opacity: 1;
+}
+
+.flickity-prev-next-button.previous {
+    left: 110px;
+}
+.flickity-prev-next-button.next {
+    right: 60px;
+}
+
+.flickity-prev-next-button{
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: 47px;
+    padding: 17px 20px;
+}
+
+.flickity-button-icon {
+    fill: #00ADEE;
+}
+
+.flickity-page-dots {
+    top: 200px;
+    cursor: pointer;
+}
+/* .flckity-page-dots .dot{
+    background: linear-gradient(#828282, #979595, #B2B0B0, #EEEEEE );
+    opacity: 1;
+}
+
+.flckity-page-dots .dot:nth-child(1){
+    background: #828282;
+    opacity: 1;
+}
+
+.flckity-page-dots .dot:nth-child(2){
+    background: #979595;
+}
+
+.flckity-page-dots .dot:nth-child(3){
+    background: #B2B0B0;
+}
+
+.flckity-page-dots .dot:nth-child(4){
+    background: #E2E1E1;
+}
+
+.flckity-page-dots .dot:nth-child(5){
+    background: #EEEEEE;
+} */

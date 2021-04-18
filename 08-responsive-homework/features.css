@@ -1,0 +1,27 @@
+.features{
+    background-image: url(./images/bg-4.svg);
+    background-repeat:no-repeat;
+    background-size:300vw;
+    text-align: center;
+    padding: 76px 10% 150px 10%;
+}
+
+.features-table{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+    gap: 10%;
+    margin-top: 100px;
+    align-items: start;
+}
+
+.features-table div{
+    width: 311px;
+}
+
+.features-table p::before{
+    content: '•';
+    color: white;
+}
+

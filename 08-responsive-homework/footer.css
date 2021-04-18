@@ -12,8 +12,8 @@ footer{
 }
 
 footer div>a{
-    text-decoration: none;
     padding: 0 15px;
+    font-weight: 700;
 }
 
 .soc-logo>a{
@@ -26,8 +26,4 @@ footer div>a{
     border-radius: 100%;
     padding: 0;
     margin-right: 17px;
-}
-
-.soc-logo{
-    /* width: 12vw; */
 }

@@ -38,6 +38,11 @@ p{
     line-height: 26px;
     color: #4F4F4F;
 }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
 button{
     margin-top: 50px;
     background: #000;
@@ -51,7 +56,7 @@ button{
     align-items: center;
     gap: 10px;
     text-align: left;
-
+    cursor: pointer;
 }
 
 button p{

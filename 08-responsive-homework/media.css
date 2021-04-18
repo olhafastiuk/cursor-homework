@@ -74,6 +74,16 @@
      .channels-logo div:nth-child(1){
          justify-content: space-around;
      }
+
+     /* team */
+
+     .team>img{
+         width: 50vw;
+     }
+
+     .team-text{
+        margin-right: 0;
+    }
 }
     
 
@@ -332,6 +342,22 @@
 
     .channels-logo div{
         width: 300px;
+    }
+
+    /* team */
+
+    .team{
+        flex-direction: column-reverse;
+    }
+    
+    .team>img{
+        width: 100%;
+    }
+
+    .team-text{
+        margin: 0 8% 50px;
+        text-align: center;
+        align-items: center;
     }
 }
 

@@ -55,6 +55,25 @@
          grid-row: 5;
          justify-self: center;
      }
+
+     /* channels */
+
+     .channels-logo{
+        flex-direction: column;
+     }
+
+     .channels-logo div img{
+         margin-right: 0;
+     }
+     .channels-logo div{
+         justify-content: space-between;
+         width: 500px;
+         margin-bottom: 50px;
+     }
+
+     .channels-logo div:nth-child(1){
+         justify-content: space-around;
+     }
 }
     
 
@@ -309,6 +328,10 @@
 
     .flickity-prev-next-button.next {
         right: -5%;
+    }
+
+    .channels-logo div{
+        width: 300px;
     }
 }
 

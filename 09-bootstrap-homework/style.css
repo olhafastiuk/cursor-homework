@@ -26,6 +26,32 @@ nav{
     align-items: center;
 }
 
+nav svg:hover{
+    stroke: #DBDBDB;
+}
+
+.profile-img:hover{
+    width: 95%;
+    height: 95%;
+    padding: 4.5%;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.bg-danger{
+    position: relative;
+    top: -10px;
+    left: -25px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .form-control{
     box-sizing: border-box;
     width: 216px;
@@ -86,9 +112,14 @@ nav{
     background: none;
 }
 
-.dropdown-item:hover, .dropdown-item:hover, .dropdown-item:focus{
+.dropdown-item:hover, .dropdown-item:hover, .dropdown-item:focus .dropdown-item:active{
     background-color: transparent;
     color: black;
+}
+
+.btn:hover{
+    color: white;
+    background: #1e62aa;
 }
 
 .status-bar{
@@ -151,7 +182,6 @@ nav{
     content: " ";
     display: block;
     width: 100%;
-    height: 20px;
     border-top: 1px solid #a3a3a3;
 }
 
@@ -173,6 +203,8 @@ nav{
     height: 11px;
     margin-right:32px;
     fill: #262626;
+    padding-top: 21px;
+    border-top: 1px solid #000;
 }
 
 .tagged{
@@ -184,6 +216,14 @@ nav{
     height: 11px;
     margin-left:32px;
     fill: #8F8F8F;
+    padding-top: 21px;
+}
+
+.tagged:hover{
+    border-top: 1px solid #000;
+    color: black;
+    stroke: black;
+    cursor: pointer;
 }
 
 .photos{
@@ -198,7 +238,7 @@ nav{
 
 
 
-@media (max-width: 730px) {
+@media (max-width: 747px) {
     .form-control{
         display: none;
     }
@@ -279,7 +319,7 @@ nav{
     }
 
     .menu-post{
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .menu-posts-text{
@@ -291,12 +331,21 @@ nav{
         width: 30px;
         margin-top: 10px;
     }
+
     .posts{
         margin-right: 100px;
+        border-top: 0;
+        stroke: steelblue;
     }
 
     .tagged{
         margin-left: 100px;
+    }
+
+    .tagged:hover{
+        stroke: steelblue;
+        cursor: pointer;
+        border: 0;
     }
 }
 
@@ -338,6 +387,6 @@ nav{
     }
 
     .menu-post{
-        margin-top: 100px;
+        margin-top: 80px;
     }
 }

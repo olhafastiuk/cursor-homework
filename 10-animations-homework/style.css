@@ -1,0 +1,82 @@
+body>h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.accordion-body{
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+    height: 400px;
+    background: black;
+}
+.star-wars {
+    position: relative;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.star-wars span{  
+    margin-top: -40px;  
+    display: block;
+    padding: 0;
+    color: white;
+    font-size: 40px;
+    transform: rotate(-45deg); 
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.star-wars::before{
+    content: '-⸺';
+    display: block;
+    color: transparent;
+    font-size: 40px;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+    transform: rotate(45deg);
+}
+
+.star-wars::after{
+    content: '⸺-';
+    display: block;
+    margin-top: -60px;
+    margin-left: 11px;
+    color: white;
+    font-size: 40px;
+    transform: rotate(45deg);
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.star-wars:hover::after{
+    cursor: pointer;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+.star-wars:hover span{  
+    cursor: pointer;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF0000 0px 0px 10px, #ff2d2d 0px 0px 15px, #ff2d2d 0px 0px 35px, #ff2d2d 0px 0px 50px, #ff2d2d 0px 0px 75px;
+}
+
+.star-wars:focus::after, .star-wars:active::after{
+    margin-top: -40px;
+    margin-left: 0;
+    transform: rotate(0deg);
+    text-shadow: none;
+}
+
+.star-wars:active span{
+    transform: rotate(0deg);
+    text-shadow: none;
+}
+.star-wars:active::before{
+    color: white;
+    transform: rotate(0deg);
+}

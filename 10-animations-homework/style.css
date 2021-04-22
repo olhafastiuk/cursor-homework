@@ -80,3 +80,45 @@ body>h1{
     color: white;
     transform: rotate(0deg);
 }
+
+@keyframes crandle-start {
+    0% {left:0%; top:0%;}
+    25% {left: -30%; top: -40%}
+    50% {left:0%; top:0%;}
+    100% {left:0%; top:0%;}
+}
+
+@keyframes crandle-end {
+    0% {left:0%; top:0%;}
+    25% {left: 30%; top: -40%}
+    50% {left:0%; top:0%;}
+    100% {left:0%; top:0%;}
+}
+
+.newtons-crandle{
+    background: white;
+    display: flex;
+    padding: 20%;
+}
+
+.newtons-crandle:hover svg:nth-child(1){
+    position: relative;
+    left: 0%;
+    top: 0%;
+    animation-name: crandle-start;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-delay: 0;
+    animation-iteration-count:infinite;
+}
+
+.newtons-crandle:hover svg:nth-child(7){
+    position: relative;
+    left: 0%;
+    top: 0%;
+    animation-name: crandle-end;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-iteration-count:infinite;
+}

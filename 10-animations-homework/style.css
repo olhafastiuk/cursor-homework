@@ -91,14 +91,18 @@ body>h1{
 
 @keyframes crandle-start {
     0% {left:0%; top:0%;}
+    12.5% {left: -65px; top: -20px;}
     25% {left: -100px; top: -70px}
+    37.5% {left: -65px; top: -20px}
     50% {left:0%; top:0%;}
     100% {left:0%; top:0%;}
 }
 
 @keyframes crandle-end {
     0% {left:0%; top:0%;}
+    12.5% {left:65px; top: -20px;}
     25% {left: 100px; top: -70px}
+    37.5% {left: 65px; top: -20px;}
     50% {left:0%; top:0%;}
     100% {left:0%; top:0%;}
 }

@@ -16,10 +16,13 @@ body>h1{
     height: 400px;
     background: black;
 }
-.star-wars {
-    font-family: 'PT Mono', monospace;
+#wrapper{
     position: relative;
     top: 40%;
+}
+
+.star-wars {
+    font-family: 'PT Mono', monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,21 +75,27 @@ body>h1{
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 25px, #FF0000 0px 0px 10px, #ff2d2d 0px 0px 15px, #ff2d2d 0px 0px 35px, #ff2d2d 0px 0px 50px, #ff2d2d 0px 0px 75px;
 }
 
- .star-wars:active::after{
+.open::after{
     margin-top: -40px;
     margin-left: 0;
     transform: rotate(0deg);
     text-shadow: none;
 }
 
-.star-wars:active span{
+.open>span{
     margin-left: -8px;
     transform: rotate(0deg);
     text-shadow: none;
 }
-.star-wars:active::before{
+.open::before{
     color: white;
     transform: rotate(0deg);
+}
+.open:hover::after{
+    text-shadow: none;
+}
+.open:hover span{  
+    text-shadow: none;
 }
 
 @keyframes crandle-start {

@@ -1,0 +1,20 @@
+{
+  "name": "11-preprocessors-homework",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olha Fastiuk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

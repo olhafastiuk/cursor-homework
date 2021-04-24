@@ -1,3 +1,67 @@
+$font-stack: 'Roboto', sans-serif;
+$main-dark: #091133;
+$main-light: #505F98;
+$main-gray: #5D6970;
+$logo-color: #37447E;
+
+%btn{
+    cursor: pointer;
+    outline: none;
+    background: #111B47;
+    border-radius: 2px;
+    border: 2px solid #091133;
+    font-weight: 500;
+}
+// flex
+%justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%justify-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
-    
+    background: #F0F0F0;
+    font-family: $font-stack;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 10%;
+}
+header{
+    @extend %justify-between;
+
+    .logo{
+        @extend %justify-center;
+        font-weight: 900;
+        font-size: 26px;
+        color: $logo-color;
+    }
+    button{
+        @extend %btn;
+        color: white;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 5px 55px;
+        margin-left: 10%;
+
+        &:hover{
+            color: $main-dark;
+            background: white;
+        }
+    }
+}
+nav{
+    @extend %justify-between;
+    p { 
+        color: $main-light;
+        margin-right: 60px;
+        font-size: 14px;
+    }
 }

@@ -1,13 +1,4 @@
-header button {
-  cursor: pointer;
-  outline: none;
-  background: #111B47;
-  border-radius: 2px;
-  border: 2px solid #091133;
-  font-weight: 500;
-}
-
-header, nav {
+header, nav, .section1__btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +10,28 @@ header .logo {
   align-items: center;
 }
 
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2) {
+  cursor: pointer;
+  outline: none;
+  background: #111B47;
+  color: white;
+  border-radius: 2px;
+  border: 2px solid #091133;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+header, .section1__text, .section1__btn {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   background: #F0F0F0;
   font-family: "Roboto", sans-serif;
@@ -26,6 +39,27 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: #091133;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #091133;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #505F98;
 }
 
 .container {
@@ -39,7 +73,6 @@ header .logo {
 }
 
 header button {
-  color: white;
   font-size: 12px;
   line-height: 18px;
   padding: 5px 55px;
@@ -52,7 +85,47 @@ header button:hover {
 }
 
 nav p {
-  color: #505F98;
+  line-height: 24px;
   margin-right: 60px;
   font-size: 14px;
+}
+
+.section1 {
+  margin-top: 20%;
+}
+
+.section1__text {
+  width: 40vw;
+}
+
+.section1__btn {
+  width: 30vw;
+  margin-top: 10%;
+}
+
+.section1__btn button:nth-child(1) {
+  padding: 5px 40px;
+}
+
+.section1__btn button:nth-child(1):hover {
+  color: #091133;
+  background: white;
+}
+
+.section1__btn button:nth-child(2) {
+  padding: 5px 55px;
+  background: white;
+  color: #091133;
+}
+
+.section1__btn button:nth-child(2):hover {
+  color: white;
+  background: #091133;
+}
+
+.section1__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 }

@@ -4,38 +4,77 @@ $main-light: #505F98;
 $main-gray: #5D6970;
 $logo-color: #37447E;
 
-%btn{
-    cursor: pointer;
-    outline: none;
-    background: #111B47;
-    border-radius: 2px;
-    border: 2px solid #091133;
-    font-weight: 500;
-}
 // flex
 %justify-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-%justify-center{
+%justify-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+%btn{
+    cursor: pointer;
+    outline: none;
+    background: #111B47;
+    color: white;
+    border-radius: 2px;
+    border: 2px solid #091133;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+%z-1{
+    position: relative;
+    z-index: 1;
 }
 
 body{
     background: #F0F0F0;
     font-family: $font-stack;
 }
+
 a{
     text-decoration: none;
 }
+
+h1{
+    color: $main-dark;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: $main-dark;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-light;
+}
+
 .container{
     padding: 0 10%;
 }
+// header
 header{
-    @extend %justify-between;
+    @extend%justify-between;
+    @extend%z-1;
 
     .logo{
         @extend %justify-center;
@@ -45,7 +84,6 @@ header{
     }
     button{
         @extend %btn;
-        color: white;
         font-size: 12px;
         line-height: 18px;
         padding: 5px 55px;
@@ -60,8 +98,51 @@ header{
 nav{
     @extend %justify-between;
     p { 
-        color: $main-light;
+        line-height: 24px;
         margin-right: 60px;
         font-size: 14px;
+    }
+}
+// section1
+.section1{
+    @extend%flex-column;
+    margin-top: 20%;
+
+    &__text{
+        @extend%z-1;
+        width: 40vw;
+    }
+
+    &__btn{
+        @extend%justify-between, %z-1;
+        width: 30vw;
+        margin-top: 10%;
+
+        & button:nth-child(1){
+            @extend%btn;
+            padding: 5px 40px;
+
+            &:hover{
+                color: $main-dark;
+                background: white;
+            }
+        }
+        & button:nth-child(2){
+            @extend%btn;
+            padding: 5px 55px;
+            background: white;
+            color: $main-dark;
+            &:hover{
+                color: white;
+                background: $main-dark;
+            }
+        }
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
     }
 }

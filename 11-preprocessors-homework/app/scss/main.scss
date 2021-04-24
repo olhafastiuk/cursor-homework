@@ -146,3 +146,33 @@ nav{
         z-index: 0;
     }
 }
+
+// section2
+.section2{
+    display: flex;
+    align-items: center;
+    margin-top: 380px;
+    
+
+    &__text__tips{
+        @extend %justify-between;
+        margin-top: 80px;
+
+        h3 {
+            color:$main-dark;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 18px;
+            color: $main-gray;
+        }
+    }
+    &__img{
+        width: 50vw;
+        height: auto;
+        margin-left: 5vw;
+    }
+}

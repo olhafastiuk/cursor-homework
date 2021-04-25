@@ -76,12 +76,6 @@ header{
     @extend%justify-between;
     @extend%z-1;
 
-    .logo{
-        @extend %justify-center;
-        font-weight: 900;
-        font-size: 26px;
-        color: $logo-color;
-    }
     button{
         @extend %btn;
         font-size: 12px;
@@ -95,6 +89,13 @@ header{
         }
     }
 }
+.logo{
+    @extend %justify-center;
+    font-weight: 900;
+    font-size: 26px;
+    color: $logo-color;
+}
+
 nav{
     @extend %justify-between;
     p { 
@@ -227,5 +228,48 @@ nav{
     & button{
         @extend%btn;
         padding: 5px 30px;
+    }
+}
+.footer{
+    @extend%flex-column;
+    background-color: #E7ECFF;
+    padding: 5% 10%;
+    &__block1{
+        @extend%justify-between;
+        align-items: center;
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $main-gray;
+        }
+        button{
+            @extend%btn;
+            padding: 5px 17px;
+        }
+    }
+    &__block2{
+        width: 100%;
+        height: 1px;
+        background: #CDD1D4;
+        border: none;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    &__block3{
+        @extend%justify-between;
+        align-items: center;
+        & nav p {
+            color: #929ECC;
+        }
+        &__soc{
+            @extend%justify-between;
+            align-items: center;
+            width: 20vw;
+        }
+            & svg{
+                height: 16px;
+                width: auto;
+            }
     }
 }

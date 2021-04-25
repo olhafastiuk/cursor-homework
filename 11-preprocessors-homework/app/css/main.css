@@ -1,21 +1,21 @@
-header, nav, .section1__btn, .section2__text__tips, .section3__block {
+header, nav, .section1__btn, .section2__text__tips, .section3__block, .footer__block1, .footer__block3, .footer__block3__soc {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section1, .section4 {
+.section1, .section4, .footer {
   display: flex;
   flex-direction: column;
 }
 
-header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button, .section4 button {
+header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button, .section4 button, .footer__block1 button {
   cursor: pointer;
   outline: none;
   background: #111B47;
@@ -66,12 +66,6 @@ p {
   padding: 0 10%;
 }
 
-header .logo {
-  font-weight: 900;
-  font-size: 26px;
-  color: #37447E;
-}
-
 header button {
   font-size: 12px;
   line-height: 18px;
@@ -82,6 +76,12 @@ header button {
 header button:hover {
   color: #091133;
   background: white;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 26px;
+  color: #37447E;
 }
 
 nav p {
@@ -204,4 +204,51 @@ nav p {
 
 .section4 button {
   padding: 5px 30px;
+}
+
+.footer {
+  background-color: #E7ECFF;
+  padding: 5% 10%;
+}
+
+.footer__block1 {
+  align-items: center;
+}
+
+.footer__block1 p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5D6970;
+}
+
+.footer__block1 button {
+  padding: 5px 17px;
+}
+
+.footer__block2 {
+  width: 100%;
+  height: 1px;
+  background: #CDD1D4;
+  border: none;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.footer__block3 {
+  align-items: center;
+}
+
+.footer__block3 nav p {
+  color: #929ECC;
+}
+
+.footer__block3__soc {
+  align-items: center;
+  width: 20vw;
+}
+
+.footer__block3 svg {
+  height: 16px;
+  width: auto;
 }

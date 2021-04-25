@@ -1,4 +1,4 @@
-header, nav, .section1__btn, .section2__text__tips {
+header, nav, .section1__btn, .section2__text__tips, .section3__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,7 @@ header .logo {
   flex-direction: column;
 }
 
-header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2) {
+header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button {
   cursor: pointer;
   outline: none;
   background: #111B47;
@@ -157,4 +157,26 @@ nav p {
   width: 50vw;
   height: auto;
   margin-left: 5vw;
+}
+
+.section3 {
+  margin-top: 170px;
+}
+
+.section3__block {
+  margin-top: 20%;
+}
+
+.section3__block img {
+  width: 40%;
+}
+
+.section3__block__text {
+  width: 50%;
+  margin-left: 10%;
+}
+
+.section3__block__text button {
+  padding: 5px 30px;
+  margin-top: 10%;
 }

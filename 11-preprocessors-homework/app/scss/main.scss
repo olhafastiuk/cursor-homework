@@ -176,3 +176,29 @@ nav{
         margin-left: 5vw;
     }
 }
+// section3
+
+.section3{
+    margin-top: 170px;
+
+    &__block{
+        @extend %justify-between;
+        margin-top: 20%;
+
+        & img{
+            width: 40%;
+        }
+        
+        &__text {
+            width: 50%;
+            margin-left: 10%;
+
+            & button {
+                @extend%btn;
+                padding: 5px 30px;
+                margin-top: 10%;
+            }
+        }
+        
+    }
+}

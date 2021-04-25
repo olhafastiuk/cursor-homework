@@ -98,9 +98,9 @@ header{
 
 nav{
     @extend %justify-between;
-    width: 25vw;
     p { 
         line-height: 24px;
+        margin-right: 60px;
         font-size: 14px;
     }
 }
@@ -171,7 +171,7 @@ nav{
             color: $main-gray;
         }
     }
-    &__img{
+	&__img{
         width: 50vw;
         height: auto;
         margin-left: 5vw;
@@ -210,11 +210,8 @@ nav{
     @extend%flex-column;
     align-items: center;
     background-image: url(../images/bg-4.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:150vw;
     text-align: center;
-    padding: 10% 27% 10%;
+    padding: 15% 27% 10%;
 
     & span{
         font-weight: 500;
@@ -233,6 +230,8 @@ nav{
         padding: 5px 30px;
     }
 }
+<<<<<<< HEAD
+=======
 .footer{
     @extend%flex-column;
     background-color: #E7ECFF;
@@ -276,30 +275,4 @@ nav{
             }
     }
 }
-
-@media (max-width: 1024px) {
-    nav p { 
-        font-size: 12px;
-    }
-    header button{
-        margin-left: 0;
-    }
-    .section1{
-        margin-top: 20%;
-        align-items: center;
-        text-align: center;
-    
-        &__text{
-            width: 100%;
-        }
-    
-        &__btn{
-            width: 100%;
-            margin-top: 15%;
-        }
-    
-        &__img{
-            display: none;
-        }
-    }
-}
+>>>>>>> bf23c26 (HW #11: Add footer)

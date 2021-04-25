@@ -84,12 +84,9 @@ header button:hover {
   color: #37447E;
 }
 
-nav {
-  width: 25vw;
-}
-
 nav p {
   line-height: 24px;
+  margin-right: 60px;
   font-size: 14px;
 }
 
@@ -156,12 +153,6 @@ nav p {
   color: #5D6970;
 }
 
-.section2__img {
-  width: 50vw;
-  height: auto;
-  margin-left: 5vw;
-}
-
 .section3 {
   margin-top: 170px;
 }
@@ -188,11 +179,8 @@ nav p {
   margin-top: 10%;
   align-items: center;
   background-image: url(../images/bg-4.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150vw;
   text-align: center;
-  padding: 10% 27% 10%;
+  padding: 15% 27% 10%;
 }
 
 .section4 span {
@@ -257,28 +245,4 @@ nav p {
 .footer__block3 svg {
   height: 16px;
   width: auto;
-}
-
-@media (max-width: 1024px) {
-  nav p {
-    font-size: 12px;
-  }
-  header button {
-    margin-left: 0;
-  }
-  .section1 {
-    margin-top: 20%;
-    align-items: center;
-    text-align: center;
-  }
-  .section1__text {
-    width: 100%;
-  }
-  .section1__btn {
-    width: 100%;
-    margin-top: 15%;
-  }
-  .section1__img {
-    display: none;
-  }
 }

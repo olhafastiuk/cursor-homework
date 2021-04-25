@@ -1,21 +1,21 @@
-header, nav, .section1__btn, .section2__text__tips, .section3__block, .footer__block1, .footer__block3, .footer__block3__soc {
+header, nav, .section1__btn, .section2__text__tips {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section1, .section4, .footer {
+.section1 {
   display: flex;
   flex-direction: column;
 }
 
-header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button, .section4 button, .footer__block1 button {
+header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2) {
   cursor: pointer;
   outline: none;
   background: #111B47;
@@ -66,6 +66,12 @@ p {
   padding: 0 10%;
 }
 
+header .logo {
+  font-weight: 900;
+  font-size: 26px;
+  color: #37447E;
+}
+
 header button {
   font-size: 12px;
   line-height: 18px;
@@ -78,18 +84,9 @@ header button:hover {
   background: white;
 }
 
-.logo {
-  font-weight: 900;
-  font-size: 26px;
-  color: #37447E;
-}
-
-nav {
-  width: 25vw;
-}
-
 nav p {
   line-height: 24px;
+  margin-right: 60px;
   font-size: 14px;
 }
 
@@ -155,6 +152,8 @@ nav p {
   line-height: 18px;
   color: #5D6970;
 }
+<<<<<<< HEAD
+=======
 
 .section2__img {
   width: 50vw;
@@ -190,9 +189,9 @@ nav p {
   background-image: url(../images/bg-4.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 150vw;
+  background-size: 200%;
   text-align: center;
-  padding: 10% 27% 10%;
+  padding: 15% 27% 10%;
 }
 
 .section4 span {
@@ -258,27 +257,4 @@ nav p {
   height: 16px;
   width: auto;
 }
-
-@media (max-width: 1024px) {
-  nav p {
-    font-size: 12px;
-  }
-  header button {
-    margin-left: 0;
-  }
-  .section1 {
-    margin-top: 20%;
-    align-items: center;
-    text-align: center;
-  }
-  .section1__text {
-    width: 100%;
-  }
-  .section1__btn {
-    width: 100%;
-    margin-top: 15%;
-  }
-  .section1__img {
-    display: none;
-  }
-}
+>>>>>>> c2df8cb (fix)

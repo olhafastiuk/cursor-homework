@@ -202,3 +202,30 @@ nav{
         
     }
 }
+
+// section4
+.section4{
+    margin-top: 10%;
+    @extend%flex-column;
+    align-items: center;
+    background-image: url(../images/bg-4.svg);
+    text-align: center;
+    padding: 15% 27% 10%;
+
+    & span{
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 66px;
+        margin-top: 5%;
+    }
+
+    & p:nth-of-type(3){
+        font-size: 14px;
+        line-height: 24px;
+        color:$main-gray ;
+    }
+    & button{
+        @extend%btn;
+        padding: 5px 30px;
+    }
+}

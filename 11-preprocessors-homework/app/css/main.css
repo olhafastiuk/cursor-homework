@@ -10,12 +10,12 @@ header .logo {
   align-items: center;
 }
 
-.section1 {
+.section1, .section4 {
   display: flex;
   flex-direction: column;
 }
 
-header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button {
+header button, .section1__btn button:nth-child(1), .section1__btn button:nth-child(2), .section3__block__text button, .section4 button {
   cursor: pointer;
   outline: none;
   background: #111B47;
@@ -179,4 +179,29 @@ nav p {
 .section3__block__text button {
   padding: 5px 30px;
   margin-top: 10%;
+}
+
+.section4 {
+  margin-top: 10%;
+  align-items: center;
+  background-image: url(../images/bg-4.svg);
+  text-align: center;
+  padding: 15% 27% 10%;
+}
+
+.section4 span {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  margin-top: 5%;
+}
+
+.section4 p:nth-of-type(3) {
+  font-size: 14px;
+  line-height: 24px;
+  color: #5D6970;
+}
+
+.section4 button {
+  padding: 5px 30px;
 }

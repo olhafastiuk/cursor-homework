@@ -303,4 +303,8 @@ nav p {
     width: 100%;
     margin-left: 0%;
   }
+  .section4 {
+    background-size: 250vw;
+    padding: 10%;
+  }
 }

@@ -37,9 +37,13 @@ $logo-color: #37447E;
     position: relative;
     z-index: 1;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    background: #F0F0F0;
+    background: white;
     font-family: $font-stack;
     min-width: 320px;
 }
@@ -103,7 +107,12 @@ nav{
     p { 
         line-height: 24px;
         font-size: 14px;
+    
+        &:hover{
+        font-weight: 700;
+         }
     }
+
 }
 // section1
 .section1{
@@ -113,11 +122,16 @@ nav{
     &__text{
         @extend%z-1;
         width: 40vw;
+        &:hover{
+            background: rgba(255, 255, 255, 0.200);
+            border-radius: 100px;
+        }
     }
 
     &__btn{
         @extend%justify-between, %z-1;
-        width: 40vw;
+        width: 30vw;
+        min-width:410px ;
         margin-top: 10%;
 
         & button:nth-child(1){
@@ -132,7 +146,7 @@ nav{
         & button:nth-child(2){
             @extend%btn;
             padding: 5px 55px;
-            background: white;
+            background: transparent;
             color: $main-dark;
             &:hover{
                 color: white;
@@ -153,12 +167,17 @@ nav{
 .section2{
     display: flex;
     align-items: center;
-    margin-top: 380px;
+    margin-top: 600px;
+    
+    &__text{
+        @extend%z-1;
+        width: 40vw;
+    }
     
 
     &__text__tips{
         @extend %justify-between;
-        margin-top: 80px;
+        margin-top: 20%;
 
         h3 {
             color:$main-dark;
@@ -174,7 +193,10 @@ nav{
         }
     }
     &__img{
-        width: 40vw;
+        position: absolute;
+        z-index: 0;
+        right: 5%;
+        
         height: auto;
         margin-left: 5vw;
     }
@@ -200,6 +222,10 @@ nav{
                 @extend%btn;
                 padding: 5px 30px;
                 margin-top: 10%;
+                &:hover{
+                    color: $main-dark;
+                    background: white;
+                }
             }
         }
         
@@ -233,6 +259,10 @@ nav{
     & button{
         @extend%btn;
         padding: 5px 30px;
+        &:hover{
+            color: $main-dark;
+            background: white;
+        }
     }
 }
 .footer{
@@ -251,6 +281,10 @@ nav{
         button{
             @extend%btn;
             padding: 5px 17px;
+            &:hover{
+                color: $main-dark;
+                background: white;
+            }
         }
     }
     &__block2{
@@ -266,6 +300,9 @@ nav{
         align-items: center;
         & nav p {
             color: #929ECC;
+             &:hover{
+                    color: $main-dark;
+                }
         }
         &__soc{
             @extend%justify-between;
@@ -275,6 +312,9 @@ nav{
             & svg{
                 height: 16px;
                 width: auto;
+                & path:hover{
+                   fill: $main-dark;
+                }
             }
     }
 }
@@ -297,6 +337,7 @@ nav{
     
         &__btn{
             width: 100%;
+            min-width: 0px;
             margin-top: 15%;
             & button:nth-child(1){
                 margin-left: 10%;
@@ -313,7 +354,10 @@ nav{
     .section2{
         margin-top: 20%;
         text-align: center;
-        &__text__tips p{
+        &__text{
+            width: 100vw;
+        }
+            &__tips p{
                 margin: 0 15px ;
             }
         
@@ -410,11 +454,11 @@ nav{
             & button:nth-child(1){
                 margin:0 5%;
                 width: 50%;
-                padding: 0px;
+                padding: 5px 0px;
             }
             & button:nth-child(2){
                 margin:0 5%;
-                padding: 0px;
+                padding: 5px 0px;
                 width: 50%;
             }
         }
@@ -428,7 +472,7 @@ nav{
     .section3{
         margin-top: 10%;
         & button{
-            padding: 0;
+            padding: 3px 0px;
             width: 150px;
         }
     }
@@ -436,10 +480,10 @@ nav{
         background-size: 500vw;
         & p:nth-of-type(3){
             font-size: 12px;
-            line-height: 10px;
+            line-height: 25px;
         }
         & button{
-            padding: 0;
+            padding: 3px 0px;
             width: 150px;
         }
     }

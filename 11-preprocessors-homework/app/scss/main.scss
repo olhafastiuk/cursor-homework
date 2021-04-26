@@ -116,7 +116,7 @@ nav{
 
     &__btn{
         @extend%justify-between, %z-1;
-        width: 30vw;
+        width: 40vw;
         margin-top: 10%;
 
         & button:nth-child(1){
@@ -169,10 +169,11 @@ nav{
             font-size: 12px;
             line-height: 18px;
             color: $main-gray;
+            margin: 0 15px 0 0;
         }
     }
     &__img{
-        width: 50vw;
+        width: 40vw;
         height: auto;
         margin-left: 5vw;
     }
@@ -296,6 +297,12 @@ nav{
         &__btn{
             width: 100%;
             margin-top: 15%;
+            & button:nth-child(1){
+                margin-left: 10%;
+            }
+            & button:nth-child(2){
+                margin-right: 10%;
+            }
         }
     
         &__img{

@@ -333,6 +333,24 @@ nav{
     .section4{
         background-size:250vw;
         padding: 10%;
-    
+    }
+    .footer{
+        &__block1{
+            p{
+                font-size: 12px;
+            }
+            button{
+                padding: 2px 17px;
+                font-size: 12px;
+            }
+        }
+        &__block3{
+            &__soc{
+                width: 35vw;
+            }
+                & svg{
+                    height: 13px;
+                }
+        }
     }
 }

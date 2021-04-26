@@ -307,4 +307,17 @@ nav p {
     background-size: 250vw;
     padding: 10%;
   }
+  .footer__block1 p {
+    font-size: 12px;
+  }
+  .footer__block1 button {
+    padding: 2px 17px;
+    font-size: 12px;
+  }
+  .footer__block3__soc {
+    width: 35vw;
+  }
+  .footer__block3 svg {
+    height: 13px;
+  }
 }

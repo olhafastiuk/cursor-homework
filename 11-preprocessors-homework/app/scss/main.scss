@@ -41,6 +41,7 @@ $logo-color: #37447E;
 body{
     background: #F0F0F0;
     font-family: $font-stack;
+    min-width: 320px;
 }
 
 a{
@@ -312,6 +313,9 @@ nav{
     .section2{
         margin-top: 20%;
         text-align: center;
+        &__text__tips p{
+                margin: 0 15px ;
+            }
         
         &__img{
            display: none;
@@ -360,4 +364,115 @@ nav{
                 }
         }
     }
+}
+@media (max-width: 640px){
+    .container{
+        padding: 0 3%;
+    }
+    h1{
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 0.5px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    header{
+        nav{
+            width: 40vw;
+            order: 2;
+        }
+        button{
+            order: 3;
+            padding: 0;
+            width: 70px;
+            font-size: 10px;
+        }
+        .logo{
+            order: 1;
+            font-size: 24px;
+        }
+    }
+    .section1{
+        margin-top: 10%;
+
+        &__btn{
+            width: 100%;
+            margin-top: 15%;
+            & button:nth-child(1){
+                margin:0 5%;
+                width: 50%;
+                padding: 0px;
+            }
+            & button:nth-child(2){
+                margin:0 5%;
+                padding: 0px;
+                width: 50%;
+            }
+        }
+
+    }
+    .section2{
+        &__text__tips{
+            margin-top: 10%;
+        }
+    }
+    .section3{
+        margin-top: 10%;
+        & button{
+            padding: 0;
+            width: 150px;
+        }
+    }
+    .section4{
+        background-size: 500vw;
+        & p:nth-of-type(3){
+            font-size: 12px;
+            line-height: 10px;
+        }
+        & button{
+            padding: 0;
+            width: 150px;
+        }
+    }
+    .footer{
+        padding: 5%;
+        &__block1{
+            p{
+                font-size: 10px;
+                width: 30vw;
+                max-width: 110px;
+            }
+            .logo{
+                font-size: 24px;
+            }
+            button{
+                padding: 0;
+                font-size: 12px;
+                max-width: 110px;
+                width: 30vw;
+                // line-height: 20px;
+            }
+        }
+        &__block3{
+            & nav{
+                width: 37vw;
+            }
+            &__soc{
+                width: 35vw;
+                svg{
+                    height: 12px;
+                }
+            }
+        }
+    }
+
 }

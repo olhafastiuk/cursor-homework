@@ -306,23 +306,28 @@ nav{
         margin-top: 20%;
         text-align: center;
         
-    
-        &__text__tips{
-    
-            h3 {
-                color:$main-dark;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 26px;
-            }
-            p{
-                font-size: 12px;
-                line-height: 18px;
-                color: $main-gray;
-            }
-        }
         &__img{
            display: none;
         }
+    }
+    .section3{
+        margin-top: 170px;
+    
+        &__block{
+            flex-direction: column;
+            margin-top: 20%;
+            text-align: center;
+    
+            & img{
+                width: 50%;
+            }
+            
+            &__text {
+                width: 100%;
+                margin-left: 0%;
+    
+                }
+         }
+            
     }
 }

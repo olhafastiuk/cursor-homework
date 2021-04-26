@@ -285,18 +285,22 @@ nav p {
     margin-top: 20%;
     text-align: center;
   }
-  .section2__text__tips h3 {
-    color: #091133;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .section2__text__tips p {
-    font-size: 12px;
-    line-height: 18px;
-    color: #5D6970;
-  }
   .section2__img {
     display: none;
+  }
+  .section3 {
+    margin-top: 170px;
+  }
+  .section3__block {
+    flex-direction: column;
+    margin-top: 20%;
+    text-align: center;
+  }
+  .section3__block img {
+    width: 50%;
+  }
+  .section3__block__text {
+    width: 100%;
+    margin-left: 0%;
   }
 }

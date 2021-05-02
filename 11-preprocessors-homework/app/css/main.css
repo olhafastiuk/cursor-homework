@@ -72,6 +72,10 @@ p {
   padding: 0 10%;
 }
 
+header {
+  margin-top: 12px;
+}
+
 header button {
   font-size: 12px;
   line-height: 18px;

@@ -80,6 +80,7 @@ p {
 header{
     @extend%justify-between;
     @extend%z-1;
+    margin-top: 12px;
 
     button{
         @extend %btn;

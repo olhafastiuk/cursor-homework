@@ -1,0 +1,12 @@
+.btn__tab{
+    display: flex;
+    &-big:nth-child(1){
+        border-radius: 5px 0px 0px 5px;
+    }
+    &-big:nth-child(2){
+        border-radius: 0px 5px 5px 0px;
+    }
+    &-big{
+        padding: 14px 48px;
+    }
+}   

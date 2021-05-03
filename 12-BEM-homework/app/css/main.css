@@ -207,3 +207,35 @@ body {
   width: 56px;
   height: 48px;
 }
+
+.btn__tab {
+  display: flex;
+}
+
+.btn__tab-big:nth-child(1) {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btn__tab-big:nth-child(2) {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn__tab-big {
+  padding: 14px 48px;
+}
+
+.btn__sizes {
+  display: flex;
+}
+
+.btn__sizes-big:nth-child(1) {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btn__sizes-big:nth-child(3) {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn__sizes-big {
+  padding: 14px 48px;
+}

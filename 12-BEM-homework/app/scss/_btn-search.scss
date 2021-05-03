@@ -1,0 +1,20 @@
+.btn__search{
+    display: flex;
+    &-one:nth-child(1){
+        border-radius: 5px 0px 0px 5px;
+    }
+    &-one:nth-child(3){
+        border-radius: 0px 5px 5px 0px;
+    }
+    &-one{
+        padding: 11px 16px 10px 17px ;
+    }
+    &__icon-black{
+        fill: black;
+        stroke: transparent;
+    }
+    &__icon-white{
+        fill: white;
+        stroke: transparent;
+    }
+}   

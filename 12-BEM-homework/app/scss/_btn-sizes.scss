@@ -9,4 +9,13 @@
     &-big{
         padding: 14px 48px;
     }
+    &-small:nth-child(1){
+        border-radius: 5px 0px 0px 5px;
+    }
+    &-small:nth-child(3){
+        border-radius: 0px 5px 5px 0px;
+    }
+    &-small{
+        padding: 9px 24px;
+    }
 }   

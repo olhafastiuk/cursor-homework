@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/main.css")
+        title HW #12
+    body
+        .left 
+            .btns__big
+                h2.title Buttons Big
+                include ./components/btn__big.pug
+            .btns__small
+                h2.title Buttons Small
+                include ./components/btn__small.pug
+            .btns__tag
+                include ./components/btn__tag.pug
+        .right 
+            .btns__right-top
+                include ./components/btn__imgOnly.pug
+                include ./components/btn__tab-big.pug
+                include ./components/btn__sizes-big.pug
+            .btns__right-bottom
+                .left
+                    include ./components/btn__tab-small.pug
+                    include ./components/btn__search.pug
+                    include ./components/btn__sizes-small.pug
+                .right 
+                    include ./components/btn__search-colorful.pug

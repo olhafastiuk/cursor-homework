@@ -1,0 +1,20 @@
+.btn__big{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    width: 144px;
+    height: 46px;
+    cursor: pointer;
+    &__icon-right{
+        width: 24px;
+        margin-left: 14px;
+    }
+    &__icon-left{
+        width: 24px;
+        margin-right: 14px;
+    }
+}

@@ -10,6 +10,12 @@ body {
   margin: 0 58px;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
 .title {
   font-family: 'Inter', sans-serif;
   color: #2C2C2C;
@@ -33,8 +39,12 @@ body {
 
 .blue {
   background: #18A0FB;
-  border: none;
+  border: #18A0FB;
   color: white;
+}
+
+.blue:hover {
+  background: #e0e0e0;
 }
 
 .gray {
@@ -43,10 +53,28 @@ body {
   color: #878787;
 }
 
+.gray:hover {
+  background: #18A0FB;
+  color: white;
+}
+
+.gray:hover .svg-gray {
+  stroke: white;
+}
+
 .white {
   background-color: #fff;
   border: 1px solid #E0E0E0;
   color: #2C2C2C;
+}
+
+.white:hover {
+  background: #18A0FB;
+  color: white;
+}
+
+.white:hover .svg-black {
+  stroke: white;
 }
 
 .transparent {
@@ -55,16 +83,43 @@ body {
   color: #18A0FB;
 }
 
+.transparent:hover {
+  background: #18A0FB;
+  color: white;
+}
+
+.transparent:hover .svg-blue {
+  stroke: white;
+}
+
 .red {
   background: #FF3E1D;
   border: none;
   color: white;
 }
 
+.red:hover {
+  background: #18A0FB;
+  color: white;
+}
+
+.red:hover .svg-white {
+  stroke: white;
+}
+
 .green {
   background: #00D200;
   border: none;
   color: white;
+}
+
+.green:hover {
+  background: #18A0FB;
+  color: white;
+}
+
+.green:hover .svg-white {
+  stroke: white;
 }
 
 .btns__big,
@@ -194,20 +249,15 @@ body {
 }
 
 .btn__imgOnly__search {
-  background: #18A0FB;
   border-radius: 5px 0px 0px 5px;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 56px;
   height: 48px;
-  outline: none;
 }
 
 .btn__imgOnly__download {
-  background: #FFFFFF;
-  border: 1px solid #E0E0E0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,8 +266,6 @@ body {
 }
 
 .btn__imgOnly__files {
-  background: #FFFFFF;
-  border: 1px solid #E0E0E0;
   border-radius: 0px 5px 5px 0px;
   display: flex;
   align-items: center;
@@ -228,6 +276,8 @@ body {
 
 .btn__tab {
   display: flex;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .btn__tab-big:nth-child(1) {
@@ -256,6 +306,8 @@ body {
 
 .btn__sizes {
   display: flex;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .btn__sizes-big:nth-child(1) {

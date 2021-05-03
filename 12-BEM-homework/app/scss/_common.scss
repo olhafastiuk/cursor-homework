@@ -7,6 +7,11 @@ body{
     display: flex;
     margin: 0 58px;
 }
+button{
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
 .title{
     font-family: 'Inter', sans-serif;
     color: #2C2C2C;
@@ -28,33 +33,71 @@ body{
 
 .blue{
     background: #18A0FB;
-    border:none;
+    border:#18A0FB;
     color: white;
+    &:hover{
+        background:rgb(224, 224, 224);
+    }
 }
 .gray{
     background: rgba(224, 224, 224, 0.3);
     border: none;
     color: #878787;
+    &:hover{
+        background:#18A0FB;
+        color: white;
+    }
+    &:hover .svg-gray{
+        stroke: white;
+    }
 }
 .white{
     background-color: #fff;
     border: 1px solid #E0E0E0;
     color: #2C2C2C;
+    &:hover{
+        background:#18A0FB;
+        color: white;
+    }
+    &:hover .svg-black{
+        stroke: white;
+    }
 }
 .transparent{
     background-color: #fff;
     border: 1px solid #18A0FB;
     color: #18A0FB;
+    &:hover{
+        background:#18A0FB;
+        color: white;
+    }
+    &:hover .svg-blue{
+        stroke: white;
+    }
 }
 .red{
     background: #FF3E1D;
     border:none;
     color: white;
+    &:hover{
+        background:#18A0FB;
+        color: white;
+    }
+    &:hover .svg-white{
+        stroke: white;
+    }
 }
 .green{
    background: #00D200;
     border:none;
     color: white;
+    &:hover{
+        background:#18A0FB;
+        color: white;
+    }
+    &:hover .svg-white{
+        stroke: white;
+    }
 }
 .btns__big,
 .btns__small,

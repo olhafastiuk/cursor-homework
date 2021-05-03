@@ -1,5 +1,7 @@
 .btn__sizes{
     display: flex;
+    font-size: 15px;
+    line-height: 18px;
     &-big:nth-child(1){
         border-radius: 5px 0px 0px 5px;
     }

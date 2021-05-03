@@ -2,19 +2,14 @@
     display: flex;
     margin-top: 52px;
     &__search{
-        background: #18A0FB;
         border-radius: 5px 0px 0px 5px;
-        border: none;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 56px;
         height: 48px;
-        outline: none;
     }
     &__download{
-        background: #FFFFFF;
-        border: 1px solid #E0E0E0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,8 +17,6 @@
         height: 48px;
     }
     &__files{
-        background: #FFFFFF;
-        border: 1px solid #E0E0E0;
         border-radius: 0px 5px 5px 0px;
         display: flex;
         align-items: center;

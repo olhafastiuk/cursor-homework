@@ -59,7 +59,6 @@ body {
 
 .btns__big,
 .btns__small,
-.btns__tag,
 .btns__right-top,
 .btns__right-bottom {
   display: flex;
@@ -68,6 +67,15 @@ body {
   justify-content: space-between;
   height: 250px;
   margin-top: 50px;
+}
+
+.btns__tag {
+  margin-top: 50px;
+  width: 10vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
 .btn__big {
@@ -130,4 +138,30 @@ body {
 
 .svg-blue {
   stroke: #18A0FB;
+}
+
+.btn__tag {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 6px 10px;
+  margin: auto;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.btn__tag__icon-black {
+  height: 7px;
+  margin-left: 10px;
+  fill: black;
+}
+
+.btn__tag__icon-white {
+  height: 7px;
+  margin-left: 10px;
+  fill: white;
 }

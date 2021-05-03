@@ -1,0 +1,23 @@
+.btn__tag{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 6px 10px;
+    margin: auto;
+    margin-left: 0;
+    cursor: pointer;
+    &__icon-black{
+       height: 7px;
+        margin-left: 10px;
+        fill: black;
+    }
+    &__icon-white{
+        height: 7px;
+         margin-left: 10px;
+         fill: white;
+     }
+}

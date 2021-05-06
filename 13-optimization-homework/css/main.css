@@ -457,42 +457,42 @@ button {
     position: relative;
 }
 
-.reviews .arrow-left, .reviews .arrow-right {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+.carousel-cell{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin-right: 10px;
+    
 }
-
-.reviews .arrow-right {
-    right: 50px;
+.flickity-button {
+    background: transparent;
 }
-
-.reviews .arrow-left {
-    left: 50px;
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
 }
-
-.reviews .review-slider {
-    width: 90%;
-    max-width: 900px;
-    margin: 50px auto;
+.flickity-button-icon {
+    fill: rgb(252, 233, 96);
+}
+.flickity-prev-next-button.previous {
+    left: -100px;
+}
+.flickity-prev-next-button.next {
+    right: -100px;
 }
 
 .reviews .review-text {
-    display: inline-block;
-    width: calc(70% - 15px);
-    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
     line-height: 24px;
-    vertical-align: top;
+    width: 50%;
 }
 
 .reviews .main-review-img {
-    width: calc(30% - 15px);
-    margin-right: 10px;
+    width: calc(30% - 25px);
     border: 5px solid #ffdc00;
-    vertical-align: top;
-    display: inline-block;
     height: auto;
 }
 
@@ -512,6 +512,8 @@ button {
     top: -15px;
     margin-right: 10px;
 }
+
+
 
 .delivery .h2 {
     margin-bottom: 50px;

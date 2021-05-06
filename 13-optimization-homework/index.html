@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoShop</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="./css/fonts.css" as="font" >
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div class="preloader"id="page-preloader" >
+<div class="preloader" id="page-preloader" >
     <div class="load">
         <hr/><hr/><hr/><hr/>
       </div>
@@ -150,7 +151,8 @@
     <div class="wrapper">
         <h2 class="h2">как работает <span class="yellow">видеопарктроник?</span></h2>
         <div id="video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <video src="./img/video.mp4" controls></video>    
+        </div>
     </div>
 </section>
 <section class="how">
@@ -306,7 +308,7 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./js/preloader.js"></script>
 </body>
 </html>
